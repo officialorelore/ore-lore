@@ -1,31 +1,13 @@
 <!-- gallery.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ore Lore – Gallery</title>
-<style>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: black;
-color: white;
 background-image: radial-gradient(white 1px, transparent 1px), radial-gradient(white 1px, transparent 1px);
 background-size: 3px 3px, 2px 2px;
 background-position: 0 0, 1px 1px;
 }
-nav {
-display: flex;
-gap: 20px;
-padding: 20px;
-background: rgba(0,0,0,0.7);
-position: sticky;
-top: 0;
-}
+nav { display: flex; gap: 20px; padding: 20px; background: rgba(0,0,0,0.7); position: sticky; top: 0; }
 a { color: white; text-decoration: none; }
-.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 20px; padding: 40px; }
-img, video { width: 100%; border-radius: 8px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 20px; padding: 40px; max-width: 1200px; margin: auto; }
+img, video { width: 100%; border-radius: 8px; background: #111; height: 250px; object-fit: cover; }
+.slot { border: 2px dashed #555; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #ccc; }
 </style>
 </head>
 <body>
@@ -38,10 +20,14 @@ img, video { width: 100%; border-radius: 8px; }
 
 
 <div class="gallery">
-<!-- Add your images and GIFs here -->
-<img src="placeholder1.jpg" alt="Artwork 1">
-<img src="placeholder2.jpg" alt="Artwork 2">
-<video src="placeholder-video.mp4" autoplay loop muted></video>
+<div class="slot">Artwork Slot 1</div>
+<div class="slot">Artwork Slot 2</div>
+<div class="slot">Artwork Slot 3</div>
+<div class="slot">GIF / Video Slot</div>
+<div class="slot">Artwork Slot 4</div>
 </div>
+
+
+<p style="text-align:center; padding-bottom:40px;"><em>All Rights Reserved © 2025 Ore Lore Studios</em></p>
 </body>
 </html>
